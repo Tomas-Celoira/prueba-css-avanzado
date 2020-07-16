@@ -1,0 +1,51 @@
+.button{
+    border-style: none;
+    background-color: $ball-blue;
+    color: $white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+
+.button__white{
+    border-style: none;
+    background-color: $white;
+    color: $raising-black;
+    margin: 0em 2em;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+
+.section__button-large{
+    text-align: center;
+    font-size: $large;
+    font-weight: bold;
+    border-style: none;
+    background-color: $ball-blue;
+    color: $white;
+    padding: 0.5em 4em;
+    margin: 5%;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+

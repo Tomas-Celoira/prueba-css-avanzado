@@ -1,0 +1,34 @@
+.section__features{
+    margin-top: 10px;
+}
+
+.section__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: $xxxx-large;
+}
+
+.section__price{
+    margin-top: 20%;
+    padding-bottom: 15%;
+    background-color: $onix;
+}
+
+.section__bar-graph{
+    margin-top: 18%;
+    margin-left: auto;
+}
+
+.main__trekking-features{
+    width: 60%;
+    margin-top: 18%;
+    text-align: left;
+
+    h2{
+        font-weight: bolder;
+        font-size: $xx-large;
+    }
+    p{
+        padding-top: 4%;
+    }
+}

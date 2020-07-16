@@ -1,0 +1,74 @@
+@media (min-width:1200px){
+    .section__card{
+        width: 50%;
+        height: auto;
+        background-color: $white;   
+        margin-top: 5%;
+    }
+    
+    .list__item{
+        padding: 1em;
+        margin-left: 1em;
+    }
+    .card__title{
+        padding-top: 10%;
+        padding-left: 10%;
+        text-align: left;
+    }
+    .card__price{
+        font-family: $raleway;
+        font-weight: bold;
+        font-size: $xxxxx-large;
+        padding-left: 10%;
+        text-align: left;
+    }
+    
+    .card__list{
+        text-align: left;
+    }
+    
+    .section__divide{
+        width: 80%; 
+        border-color: $raising-black;   
+    }
+}
+
+
+@media (min-width:600px){
+    .section__card{
+        width: 55%;
+        height: auto;
+        background-color: $white;   
+        margin-top: 5%;
+    }
+    
+    #right{
+        margin-left: 45%;
+    }
+
+    .list__item{
+        padding: 1em;
+        margin-left: 1em;
+    }
+    .card__title{
+        padding-top: 10%;
+        padding-left: 10%;
+        text-align: left;
+    }
+    .card__price{
+        font-family: $raleway;
+        font-weight: bold;
+        font-size: $xxxxx-large;
+        padding-left: 10%;
+        text-align: left;
+    }
+    
+    .card__list{
+        text-align: left;
+    }
+    
+    .section__divide{
+        width: 80%; 
+        border-color: $raising-black;   
+    }
+}

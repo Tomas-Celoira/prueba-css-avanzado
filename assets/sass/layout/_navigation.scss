@@ -1,0 +1,22 @@
+.nav{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+
+}
+
+.nav__item{
+    text-decoration: none;
+    color: $raising-black;
+    padding: 0em 1em;
+
+    &:hover{
+        text-decoration: none;
+        color: $raising-black;
+    }
+}
+
+.nav__buttons{
+    justify-content: right;
+}

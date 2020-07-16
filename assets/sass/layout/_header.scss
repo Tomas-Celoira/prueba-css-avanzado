@@ -1,0 +1,23 @@
+
+.img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+.main__div{
+    height: 115vh;
+
+}
+
+.main__trekking{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 18%;
+    text-align: left;
+
+    h1{
+        font-weight: bold;
+        font-size: $xxxxx-large;
+    }
+}
