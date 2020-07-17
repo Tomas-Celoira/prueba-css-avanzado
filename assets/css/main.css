@@ -9910,11 +9910,28 @@ h3 {
   }
 }
 body {
+  font-size: 16px;
+}
+
+@keyframes opacidad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+body {
   font-family: "Open Sans", sans-serif;
 }
 
 .nav {
   font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .nav {
@@ -9938,116 +9955,256 @@ body {
   justify-content: right;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1920px) {
   .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: none;
+  }
+
+  .main__div-column {
+    display: none;
+  }
+}
+@media (max-width: 1920px) {
+  .section__article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .section__article {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+    grid-gap: 1rem;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 1920px) {
   .section__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5%;
+    grid-template-rows: none;
+    grid-gap: 1rem;
     text-align: center;
   }
 }
-@media (min-width: 600px) {
+@media (max-width: 768px) {
   .section__grid {
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 5%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+    grid-gap: 1rem;
     text-align: center;
   }
 }
-.img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -1;
-}
+@media (max-width: 1920px) {
+  .img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
 
-.main__div {
-  height: 115vh;
-}
+  .main__div {
+    height: 115vh;
+  }
 
-.main__trekking {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 18%;
-  text-align: left;
-}
-.main__trekking h1 {
-  font-weight: bold;
-  font-size: 50px;
-}
+  .main__div-column {
+    height: 115vh;
+  }
 
-.footer {
-  background-color: #221d23;
-  height: 15vh;
-  font-size: 20px;
+  .main__trekking {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 18%;
+    text-align: left;
+    grid-column: span 1;
+  }
+  .main__trekking h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
 }
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
 
-.footer__container {
-  padding-top: 3%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
+  .main__div {
+    height: 70vh;
+  }
+
+  .main__div-column {
+    height: 70vh;
+  }
+
+  .main__trekking {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 18%;
+    text-align: left;
+    grid-column: span 1;
+  }
+  .main__trekking h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
 }
+@media (max-width: 1920px) {
+  .footer {
+    background-color: #221d23;
+    height: 20vh;
+    font-size: 20px;
+  }
 
-.footer__ul {
-  width: 50%;
+  .footer__container {
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer__ul {
+    width: 50%;
+  }
+
+  .footer__item {
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 7%;
+    color: #bababa;
+  }
+
+  .footer__item-final {
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding-right: 5%;
+    color: #bababa;
+  }
 }
+@media (max-width: 768px) {
+  .footer {
+    background-color: #221d23;
+    height: 20vh;
+    font-size: 16px;
+  }
 
-.footer__item {
-  text-decoration: none;
-  color: #fff;
-  box-sizing: border-box;
-  padding-left: 7%;
-  color: #bababa;
+  .footer__container {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer__ul {
+    flex-grow: 2;
+    width: 100%;
+  }
+
+  .footer__item {
+    text-decoration: none;
+    color: #fff;
+    color: #bababa;
+  }
+
+  .footer__item-final {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5%;
+    color: #bababa;
+    text-align: center;
+    flex-grow: 1;
+  }
 }
+@media (max-width: 1920px) {
+  .section__features {
+    margin-top: 10px;
+  }
 
-.footer__item-final {
-  text-decoration: none;
-  color: #fff;
-  box-sizing: border-box;
-  padding-right: 5%;
-  color: #bababa;
+  .section__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+  }
+
+  .main__trekking-features {
+    width: 60%;
+    margin-top: 18%;
+    text-align: left;
+  }
+  .main__trekking-features h2 {
+    font-weight: bolder;
+    font-size: 35px;
+  }
+  .main__trekking-features p {
+    padding-top: 4%;
+  }
+
+  .section__bar-graph {
+    margin-top: 18%;
+    margin-left: auto;
+  }
 }
+@media (max-width: 768px) {
+  .section__features {
+    padding-top: 0%;
+    padding-bottom: 15%;
+  }
 
-.section__features {
-  margin-top: 10px;
+  .section__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .main__trekking-features {
+    width: 80%;
+    margin-top: 0%;
+    margin-left: 10%;
+  }
+  .main__trekking-features h2 {
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+  }
+  .main__trekking-features p {
+    padding-top: 4%;
+    text-align: left;
+  }
+
+  .section__bar-graph {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-.section__title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 45px;
-}
-
 .section__price {
   margin-top: 20%;
   padding-bottom: 15%;
   background-color: #333745;
 }
 
-.section__bar-graph {
-  margin-top: 18%;
-  margin-left: auto;
-}
-
-.main__trekking-features {
-  width: 60%;
-  margin-top: 18%;
-  text-align: left;
-}
-.main__trekking-features h2 {
-  font-weight: bolder;
-  font-size: 35px;
-}
-.main__trekking-features p {
-  padding-top: 4%;
+.section__bar-animation:hover {
+  animation-name: opacidad;
+  animation-duration: 5s;
 }
 
 .button {
@@ -10095,12 +10252,19 @@ body {
   background-color: #c7c8cc;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1920px) {
   .section__card {
     width: 50%;
     height: auto;
     background-color: #fff;
     margin-top: 5%;
+  }
+  .section__card:hover {
+    box-shadow: 10px 10px 50px #221d23;
+  }
+
+  #right {
+    margin-left: 45%;
   }
 
   .list__item {
@@ -10131,16 +10295,20 @@ body {
     border-color: #221d23;
   }
 }
-@media (min-width: 600px) {
+@media (max-width: 768px) {
   .section__card {
-    width: 55%;
+    width: 80%;
     height: auto;
     background-color: #fff;
     margin-top: 5%;
+    margin-left: 10%;
+  }
+  .section__card:hover {
+    box-shadow: 10px 10px 50px #221d23;
   }
 
   #right {
-    margin-left: 45%;
+    margin-left: 10%;
   }
 
   .list__item {
@@ -10157,7 +10325,7 @@ body {
   .card__price {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
     padding-left: 10%;
     text-align: left;
   }

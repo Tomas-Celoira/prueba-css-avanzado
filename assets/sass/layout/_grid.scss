@@ -1,34 +1,68 @@
 //Seccion header
-@media (min-width: 1200px){
+@media (max-width: 1920px){
     .main{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: none;
     }
 }
+
+@media (max-width: 768px){
+    .main{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: none;
+    }
+    .main__div-column{
+        display: none;
+    }
+}
+
 
 //Seccion hero-section
 
 
 //Seccion features
+@media (max-width: 1920px){
+    .section__article{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: none;
+        grid-gap: 1rem;
+        align-items: center;
+    }
+}
 
+
+@media (max-width: 768px) {
+    .section__article{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: none;
+        grid-gap: 1rem;
+        vertical-align: middle;
+    }
+}
 
 
 //Seccion de cards
-@media (min-width: 1200px){
+@media (max-width: 1920px){
     .section__grid{
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
-        grid-gap: 5%;
+        grid-template-rows: none;
+        grid-gap: 1rem;
         text-align: center;
     }
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
     .section__grid{
         display: grid;
-        grid-template-rows: repeat(1,1fr);
-        grid-gap: 5%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: none;
+        grid-gap: 1rem;
         text-align: center;
     }
 }

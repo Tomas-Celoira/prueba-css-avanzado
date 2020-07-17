@@ -1,34 +1,77 @@
-.section__features{
-    margin-top: 10px;
+//Section features
+@media (max-width: 1920px){
+    .section__features{
+        margin-top: 10px;
+    }
+    
+    .section__title{
+        text-align: center;
+        font-weight: bold;
+        font-size: $xxxx-large;
+    }
+    .main__trekking-features{
+        width: 60%;
+        margin-top: 18%;
+        text-align: left;
+
+        h2{
+            font-weight: bolder;
+            font-size: $xx-large;
+        }
+        p{
+            padding-top: 4%;
+        }
+    }
+
+    .section__bar-graph{
+        margin-top: 18%;
+        margin-left: auto;
+    }
 }
 
-.section__title{
-    text-align: center;
-    font-weight: bold;
-    font-size: $xxxx-large;
+@media (max-width: 768px){
+    .section__features{
+        padding-top: 0%;
+        padding-bottom: 15%;
+    }
+    
+    .section__title{
+        text-align: center;
+        font-weight: bold;
+        font-size: $xx-large;
+    }
+    .main__trekking-features{
+        width: 80%;
+        margin-top: 0%;
+        margin-left: 10%;
+
+        h2{
+            font-weight: bolder;
+            font-size: $large;
+            text-align: left;
+        }
+        p{
+            padding-top: 4%;
+            text-align: left;
+        }
+    }
+
+    .section__bar-graph{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
+
+//Section cards
 .section__price{
     margin-top: 20%;
     padding-bottom: 15%;
     background-color: $onix;
 }
 
-.section__bar-graph{
-    margin-top: 18%;
-    margin-left: auto;
-}
-
-.main__trekking-features{
-    width: 60%;
-    margin-top: 18%;
-    text-align: left;
-
-    h2{
-        font-weight: bolder;
-        font-size: $xx-large;
-    }
-    p{
-        padding-top: 4%;
-    }
+.section__bar-animation:hover{
+    animation-name: opacidad;
+    animation-duration: 5s;
 }

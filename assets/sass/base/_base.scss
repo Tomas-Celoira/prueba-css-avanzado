@@ -1,0 +1,10 @@
+//Typography 
+body{
+    font-size: $medium;
+}
+
+//Animation keyframes
+@keyframes opacidad{
+    from{opacity: 0;}
+    to{opacity: 100;}
+}

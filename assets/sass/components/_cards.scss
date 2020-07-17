@@ -1,9 +1,18 @@
-@media (min-width:1200px){
+@media (max-width:1920px){
     .section__card{
         width: 50%;
         height: auto;
         background-color: $white;   
         margin-top: 5%;
+        
+        &:hover{
+            box-shadow: 10px 10px 50px $raising-black;
+        }
+        
+    }
+
+    #right{
+        margin-left: 45%;
     }
     
     .list__item{
@@ -34,17 +43,23 @@
 }
 
 
-@media (min-width:600px){
+@media (max-width:768px){
     .section__card{
-        width: 55%;
+        width: 80%;
         height: auto;
         background-color: $white;   
         margin-top: 5%;
+        margin-left: 10%;
+
+        &:hover{
+            box-shadow: 10px 10px 50px $raising-black;
+        }
+    }
+
+    #right{
+        margin-left: 10%;
     }
     
-    #right{
-        margin-left: 45%;
-    }
 
     .list__item{
         padding: 1em;
@@ -58,7 +73,7 @@
     .card__price{
         font-family: $raleway;
         font-weight: bold;
-        font-size: $xxxxx-large;
+        font-size: $xxxx-large;
         padding-left: 10%;
         text-align: left;
     }
