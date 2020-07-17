@@ -1,10 +1,18 @@
 @media (max-width: 1920px){
+    .main-bg{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+    }
+
     .img{
         width: 100%;
         height: auto;
         position: absolute;
         z-index: -1;
     }
+
     .main__div{
         height: 115vh;
     }
@@ -27,12 +35,22 @@
 }
 
 @media (max-width: 768px){
+    .main-bg{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+        position: relative;
+        top: -30%;
+    }
+
     .img{
         width: 100%;
         height: auto;
         position: absolute;
         z-index: -1;
     }
+
     .main__div{
         height: 70vh;
     }

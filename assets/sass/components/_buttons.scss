@@ -37,6 +37,7 @@
     border-style: none;
     background-color: $ball-blue;
     color: $white;
+    width: auto;
     padding: 0.5em 4em;
     margin: 5%;
 
@@ -46,6 +47,8 @@
 
     &:focus {
         background-color: $lavender-gray;
+        border-style: none;
+        border-width: 0em;
     }
 }
 

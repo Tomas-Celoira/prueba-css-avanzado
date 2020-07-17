@@ -10137,6 +10137,13 @@ input:checked ~ .nav__container{
   }
 }
 @media (max-width: 1920px) {
+  .main-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
   .img {
     width: 100%;
     height: auto;
@@ -10165,6 +10172,15 @@ input:checked ~ .nav__container{
   }
 }
 @media (max-width: 768px) {
+  .main-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    position: relative;
+    top: -30%;
+  }
+
   .img {
     width: 100%;
     height: auto;
@@ -10369,6 +10385,7 @@ input:checked ~ .nav__container{
   border-style: none;
   background-color: #2ab7ca;
   color: #fff;
+  width: auto;
   padding: 0.5em 4em;
   margin: 5%;
 }
@@ -10377,6 +10394,8 @@ input:checked ~ .nav__container{
 }
 .section__button-large:focus {
   background-color: #c7c8cc;
+  border-style: none;
+  border-width: 0em;
 }
 
 @media (max-width: 1920px) {
